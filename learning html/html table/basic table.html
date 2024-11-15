@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 800px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th, td {
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+            }
+
+            td {
+                margin-bottom: 10px;
+                display: block;
+                text-align: right;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 10px;
+                text-align: left;
+                font-weight: bold;
+                background-color: #f2f2f2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+                <th>Header 6</th>
+                <th>Header 7</th>
+                <th>Header 8</th>
+                <th>Header 9</th>
+                <th>Header 10</th>
+                <th>Header 11</th>
+                <th>Header 12</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <td data-label="Header 1">Data 1</td>
+                <td data-label="Header 2">Data 2</td>
+                <td data-label="Header 3">Data 3</td>
+                <td data-label="Header 4">Data 4</td>
+                <td data-label="Header 5">Data 5</td>
+                <td data-label="Header 6">Data 6</td>
+                <td data-label="Header 7">Data 7</td>
+                <td data-label="Header 8">Data 8</td>
+                <td data-label="Header 9">Data 9</td>
+                <td data-label="Header 10">Data 10</td>
+                <td data-label="Header 11">Data 11</td>
+                <td data-label="Header 12">Data 12</td>
+            </tr>
+            <!-- Add more rows below -->
+            <tr>
+                <td data-label="Header 1">Data 1</td>
+                <td data-label="Header 2">Data 2</td>
+                <td data-label="Header 3">Data 3</td>
+                <td data-label="Header 4">Data 4</td>
+                <td data-label="Header 5">Data 5</td>
+                <td data-label="Header 6">Data 6</td>
+                <td data-label="Header 7">Data 7</td>
+                <td data-label="Header 8">Data 8</td>
+                <td data-label="Header 9">Data 9</td>
+                <td data-label="Header 10">Data 10</td>
+                <td data-label="Header 11">Data 11</td>
+                <td data-label="Header 12">Data 12</td>
+            </tr>
+            <!-- Continue adding rows until you have 10 rows -->
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #e8eff4;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        height: 100vh;
+        width: 100vw;
+        font-family: Arial, sans-serif;
+      }
+      .most_outer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .parent {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        position: absolute;
+        top: 15.4%;
+        left: 2.2%;
+      }
+      .parent img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .tag {
+        position: relative;
+        left: -4px;
+        padding: 3.4%;
+        margin-top: 2px;
+      }
+      .tags {
+        text-decoration: none;
+        background-color: rgb(234, 240, 242);
+        border-radius: 15.5px;
+        padding: 3.3%;
+        position: relative;
+        top: 2px;
+        left: -4.6px;
+      }
+      .content {
+        position: relative;
+        left: -9.5px;
+        margin: 10px 10px 10px 5px;
+        padding: 10px;
+        text-align: justify;
+      }
+      .heading {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      #ReadMore {
+        background-color: #8fe8f8;
+        border: none;
+        color: #000000;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 19.2px;
+        transition: background-color 0.3s ease;
+        width: 100%;
+      }
+
+      #ReadMore:hover {
+        background-color: #007bff; /* Blue background */
+      }
+      .parent2 {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        position: absolute;
+        top: 16.7%;
+        left: 76.1%;
+      }
+      .parent2 img {
+        width: 100%;
+        border-radius: 15px;
+      }
+      @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%; /* Make cards wider to fill more of the screen */
+    }
+    .card h3 {
+        font-size: 22px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+    .tag {
+        font-size: 13px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+/* Stack cards vertically on small devices (phones) */
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Adjust width for small screens */
+        padding: 10px;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .tag {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 8px;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div class="most_outer">
+      <div class="parent">
+        <img src="landscape.png" alt="landscape image" />
+        <div class="tag">
+          <a href="#" class="tags">Nature</a>
+          <a href="#" class="tags">Lake</a>
+        </div>
+        <div class="content">
+          <h2 class="heading">Lakeside</h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            veritatis laboriosam esse laudantium eligendi itaque deserunt vitae
+            rem? Voluptates, commodi!
+          </p>
+        </div>
+        <div class="button1">
+          <button type="button" id="ReadMore">Read More</button>
+        </div>
+      </div>
+      <div class="parent2">
+        <img src="landscape_2.jpg" alt="landscape image" />
+        <div class="tag">
+          <a href="#" class="tags">Nature</a>
+          <a href="#" class="tags">Lake</a>
+        </div>
+        <div class="content">
+          <h2 class="heading">Sunset</h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            atque quos harum rem. Cupiditate, earum.
+          </p>
+        </div>
+        <div class="button1">
+          <button type="button" id="ReadMore">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

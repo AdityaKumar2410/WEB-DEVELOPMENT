@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .static-element {
+      position: static;
+    }
+    .relative-element {
+      position: relative;
+      /* relative position is to the static position */
+      top: 10px;
+      left: 20px;
+    }
+    .absolute-element {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+    }
+    .fixed-element {
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    .sticky-element {
+      position: sticky;
+      top: 0;
+      background-color: yellow; /* for visibility */
+    }
+  </style>
+</head>
+<body>
+  <div class="static-element">This is static</div>
+  <div class="relative-element">This is relative</div>
+  <div class="absolute-element">This is absolute</div>
+  <div class="fixed-element">This is fixed</div>
+  <!-- <div class="sticky-element">This is sticky</div> -->
+</body>
+</html>

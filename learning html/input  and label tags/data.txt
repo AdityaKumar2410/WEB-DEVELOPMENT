@@ -1,0 +1,7 @@
+Name: Aditya
+Email: akdjklfjal@myemail.com
+Password: jkdkljajiof
+Gender: male
+Hobbies: sports
+Country: in
+

@@ -1,0 +1,109 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px;
+    background-color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+  }
+  .main {
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  footer {
+    text-align: right;
+    color: midnightblue;
+  }
+
+  @keyframes glitter {
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+  }
+
+  span {
+    display: inline-block;
+    background: linear-gradient(
+      90deg,
+      #ffd700,
+      #ff8c00,
+      #ff1493,
+      #1e90ff,
+      #ffd700
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 3s infinite;
+  }
+
+  .left,
+  .right {
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  #footer {
+    clear: both;
+    background-color: #c511d8;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .tile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .left,
+    .right {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    footer {
+      text-align: center;
+    }
+  }
