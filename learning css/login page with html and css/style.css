@@ -1,5 +1,5 @@
 body {
-  background-image: url("background\ image.jpg");
+  background-image: url("bg.png");
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -8,6 +8,8 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 /* Login box styling */
@@ -99,9 +101,8 @@ header {
   padding: 10px 20px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -21.7px;
   width: 100%;
-  
 }
 
 .logo {
@@ -129,9 +130,33 @@ header {
   text-decoration: none; /* Remove underline */
   color: white;
   font-size: 18px;
-  transition: color 0.3s ease; /* Smooth hover effect */
+  transition: all 0.5s ease; /* Smooth hover effect */
 }
 
 .nav-links a:hover {
-  color: #00bcd4; /* Change color on hover */
+  color: #7c8179; /* Change color on hover */
+  background-color: rgb(204, 195, 195);
+  border-radius: 15%;
+  padding: 15px 15px;
+}
+
+.nav-links a:visited {
+  color: #7c8179; 
+  background-color: rgb(204, 195, 195);
+  border-radius: 15%;
+  padding: 15px 15px;
+}
+
+.footer{
+  background-color: rgb(185, 176, 176);
+  height: 10vh;
+  width: 100%;
+  margin: 2px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: -40.4px;
 }
